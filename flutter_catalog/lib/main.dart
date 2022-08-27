@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_catalog/pages/home_page.dart';
 import 'package:flutter_catalog/pages/login_page.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_catalog/utils/routes.dart';
 
 
 void main(){
+  // ignore: prefer_const_constructors
   runApp(MyApp());
 }
 
@@ -15,7 +17,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return MaterialApp(
-      
       themeMode: ThemeMode.light, 
       theme: ThemeData(
         primarySwatch: Colors.red,
@@ -25,15 +26,18 @@ class MyApp extends StatelessWidget {
         brightness:Brightness.dark,
       ),
       
-      initialRoute: "/Login",
+      initialRoute: "/login",
 
       routes: {
    
+        // ignore: prefer_const_constructors
         "/": (context) => LoginPage(),
  
-        "/Home":(context) => HOMEPAGE(),
+        // ignore: prefer_const_constructors
+        MyRoutes.homeRoute:(context) => HOMEPAGE(),
   
-        "/Login":(context) => LoginPage(),
+        // ignore: prefer_const_constructors
+        MyRoutes.loginRoute:(context) => LoginPage(),
 
       },
     ); 

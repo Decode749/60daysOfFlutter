@@ -11,13 +11,16 @@ class HOMEPAGE extends StatelessWidget {
     final String name = "tuesday";
     return Scaffold(
       appBar: AppBar(
+        // ignore: prefer_const_constructors
         title: Text("hello world!"),
       ),
         body: Center(
+        // ignore: avoid_unnecessary_containers
         child : Container(
           child: Text("Welcome to $days of flutter on $name!"),
         ),
         ),
+        // ignore: prefer_const_constructors
         drawer: Drawer(),
       );
   }
