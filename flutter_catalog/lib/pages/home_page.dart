@@ -13,7 +13,9 @@ class HOMEPAGE extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         // ignore: prefer_const_constructors
-        title: Text("hello world!"),
+        title: Text(
+          "Catalog App",
+          ),
       ),
         body: Center(
         // ignore: avoid_unnecessary_containers
