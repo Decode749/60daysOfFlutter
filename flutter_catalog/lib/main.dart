@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
 
     return MaterialApp(
       themeMode: ThemeMode.light, 
@@ -25,8 +26,8 @@ class MyApp extends StatelessWidget {
       darkTheme: ThemeData(
         brightness:Brightness.dark,
       ),
-      
-      initialRoute: "/login",
+      debugShowCheckedModeBanner: false,
+      initialRoute: MyRoutes.homeRoute,
 
       routes: {
    
